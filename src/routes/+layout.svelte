@@ -10,7 +10,7 @@
 <div class="container">
   <div class="header">
     <a href="https://xalliance.io/" rel="noreferrer" target="_blank" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;">
-      <img src="/xAlliance-logo.png" alt="xAlliance" style="height:48px;display:block;" />
+      <img src="/xAlliance-logo-dark.png" alt="xAlliance" style="height:48px;display:block;" />
     </a>
   </div>
   {@render children?.()}
