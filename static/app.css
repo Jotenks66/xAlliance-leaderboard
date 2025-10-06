@@ -295,4 +295,13 @@ tbody tr:hover {
 }
 .link:hover { text-decoration: underline; }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
 

@@ -14,5 +14,8 @@
     </a>
   </div>
   {@render children?.()}
-  <div style="height: 24px"></div>
+  <footer class="footer" aria-label="Footer links">
+    <a class="badge link" href="https://xalliance.io/" target="_blank" rel="noopener noreferrer">xalliance.io</a>
+    <a class="badge link" href="https://x.com/xalliancedao" target="_blank" rel="noopener noreferrer">@xalliancedao</a>
+  </footer>
 </div>
