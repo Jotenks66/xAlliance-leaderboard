@@ -1,0 +1,50 @@
+# Node dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+.svelte-kit/
+dist/
+build/
+.vite/
+
+# Testing
+coverage/
+*.lcov
+.vitest/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Bun
+bun.lockb
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Caches and temp
+.cache/
+.tmp/
+
+# Deployment
+.vercel/
+.netlify/
+
+# Local overrides
+*.local
