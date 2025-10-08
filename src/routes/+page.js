@@ -6,9 +6,15 @@ export async function load({ fetch, depends }) {
   depends('data:leaderboard');
   try {
     const full = await getFullLeaderboard(fetch);
-    return { leaderboard: full.items ?? [], tiers: full.tiers ?? [], error: null };
+    return {
+      leaderboard: full.items ?? [],
+      tiers: full.tiers ?? [],
+      totalCount: full?.meta?.count ?? (Array.isArray(full?.items) ? full.items.length : 0),
+      lastUpdated: full?.lastUpdated ?? null,
+      error: null
+    };
   } catch (e) {
-    return { leaderboard: [], tiers: [], error: 'Unable to load leaderboard. Please try again later.' };
+    return { leaderboard: [], tiers: [], totalCount: 0, lastUpdated: null, error: 'Unable to load leaderboard. Please try again later.' };
   }
 }
 
